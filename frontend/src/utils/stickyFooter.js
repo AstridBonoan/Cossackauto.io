@@ -3,25 +3,23 @@ export default function initStickyFooter() {
   if (typeof window === 'undefined') return
 
   const BAR_SELECTOR = '.sticky-contact'
-  const FOOTER_IMG_SELECTOR = '.site-footer img[alt="footer logo"]'
+  const FOOTER_SELECTOR = '.site-footer'
 
   const bar = document.querySelector(BAR_SELECTOR)
-  const footerImg = document.querySelector(FOOTER_IMG_SELECTOR)
-  if (!bar || !footerImg) return
+  const footer = document.querySelector(FOOTER_SELECTOR)
+  if (!bar || !footer) return
 
   function update() {
     const scrollY = window.scrollY || window.pageYOffset
     const viewportBottom = scrollY + window.innerHeight
 
-    const imgRect = footerImg.getBoundingClientRect()
-    const imgTopDoc = scrollY + imgRect.top
-    const imgBottomDoc = imgTopDoc + footerImg.offsetHeight
+    const footerRect = footer.getBoundingClientRect()
+    const footerTopDoc = scrollY + footerRect.top
+    const footerBottomDoc = footerTopDoc + footer.offsetHeight
 
-    // if viewport bottom has reached the footer image bottom, place the bar below it
-    if (viewportBottom >= imgBottomDoc - 4) {
-      // position the bar just below the footer image in document flow
+    if (viewportBottom >= footerBottomDoc - 4) {
       bar.style.position = 'absolute'
-      bar.style.top = (imgBottomDoc + 8) + 'px'
+      bar.style.top = (footerBottomDoc + 8) + 'px'
       bar.style.bottom = 'auto'
       bar.style.left = '50%'
       bar.style.transform = 'translateX(-50%)'
