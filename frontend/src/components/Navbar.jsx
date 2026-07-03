@@ -66,13 +66,13 @@ export default function Navbar() {
               <li className="py-2"><Link to="/reservation" onClick={handleNavLinkClick}>Reservation</Link></li>
             </ul>
               <div className="p-4 border-t border-white/5">
-              <Link to="/reservation" onClick={handleNavLinkClick} className="btn-primary w-full block text-center py-3">Book an appointment</Link>
+              <Link to="/reservation" onClick={handleNavLinkClick} className="btn-primary w-full block text-center py-3">Book now</Link>
               </div>
           </nav>
         )}
 
         <div className="hidden lg:flex items-center ml-4 header-cta">
-          <Link to="/reservation" className="btn-primary">Book an appointment</Link>
+          <Link to="/reservation" className="btn-primary">Book now</Link>
         </div>
       </div>
     </header>

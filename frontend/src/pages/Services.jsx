@@ -22,7 +22,7 @@ export default function Services(){
           <p className="page-header-lead">We provide a full range of maintenance and repair services — from routine oil changes to engine diagnostics and transmission work.</p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map(s => (
             <article key={s.title} className="service-card">
               <h3>{s.title}</h3>
