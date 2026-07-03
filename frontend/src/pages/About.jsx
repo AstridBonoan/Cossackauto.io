@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import aboutPhoto from '../assets/about-photo.png'
 
 export default function About(){
   return (
@@ -13,7 +14,11 @@ export default function About(){
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-start">
           <div className="md:col-span-1 flex justify-center md:justify-start">
-            <div className="about-photo">Photo</div>
+            <img
+              src={aboutPhoto}
+              alt="Owner of Cossack Auto"
+              className="about-photo"
+            />
           </div>
 
           <div className="md:col-span-2">
