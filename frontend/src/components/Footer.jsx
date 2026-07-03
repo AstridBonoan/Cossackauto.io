@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo.png'
-import logoFallback from '../assets/logo-fallback.svg'
+import { logo, logoFallback } from '../config/brand'
 import CONTACT from '../config/contact'
 
 const NAV_LINKS = [

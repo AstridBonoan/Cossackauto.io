@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" fill="none">
-  <rect width="120" height="40" rx="6" fill="#0ea5a4" />
-  <text x="16" y="26" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="14">Cossack</text>
-  <text x="72" y="26" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="14">Auto</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" role="img" aria-label="Cossack Auto">
+  <circle cx="24" cy="24" r="24" fill="#0F1113"/>
+  <text x="24" y="28" fill="#EFE7DD" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" text-anchor="middle">CA</text>
 </svg>

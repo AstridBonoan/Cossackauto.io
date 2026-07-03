@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import logo from '../../images/logo.png'
-import logoFallback from '../assets/logo-fallback.svg'
+import { logo, logoFallback } from '../config/brand'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
