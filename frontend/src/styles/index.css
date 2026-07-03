@@ -580,11 +580,10 @@ section.trust-strip {
 
 /* About */
 .about-photo {
+	display: block;
 	width: 100%;
-	max-width: 16rem;
-	aspect-ratio: 3 / 4;
-	object-fit: cover;
-	object-position: center top;
+	max-width: 18rem;
+	height: auto;
 	border-radius: var(--radius);
 	border: 1px solid var(--color-border);
 	box-shadow: var(--shadow-md);
