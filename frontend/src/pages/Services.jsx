@@ -14,14 +14,14 @@ const services = [
 
 export default function Services(){
   return (
-    <section id="services">
+    <section id="services" className="section-surface">
       <div className="max-w-6xl mx-auto px-4">
         <div className="page-header">
           <h2>Services</h2>
           <p className="page-header-lead">We provide a full range of maintenance and repair services — from routine oil changes to engine diagnostics and transmission work.</p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map(s => (
             <article key={s.title} className="service-card">
               <h3>{s.title}</h3>

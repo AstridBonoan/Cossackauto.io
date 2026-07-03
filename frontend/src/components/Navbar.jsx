@@ -37,7 +37,7 @@ export default function Navbar() {
     <header className="site-header">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="logo flex-none flex items-center space-x-3">
-          <img src={logo} alt="Cossack Auto" className="h-12 w-12 object-contain rounded-full" onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src=logoFallback}} />
+          <img src={logo} alt="Cossack Auto" className="h-12 w-12 object-contain" onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src=logoFallback}} />
           <span>Cossack Auto</span>
         </Link>
 

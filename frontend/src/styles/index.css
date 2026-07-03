@@ -38,6 +38,7 @@ p, a, button, input, select, textarea, label {
 
 body {
 	background-color: var(--color-offwhite);
+	background-image: linear-gradient(180deg, #e8e0d6 0%, var(--color-offwhite) 12rem, var(--color-offwhite) 100%);
 	color: var(--color-charcoal);
 	font-size: 1rem;
 	line-height: 1.6;
@@ -57,13 +58,13 @@ p { font-size: 1rem; color: var(--color-muted); }
 }
 
 /* Page sections */
-section {
+section:not(.hero-band) {
 	padding-top: var(--section-py-mobile);
 	padding-bottom: var(--section-py-mobile);
 }
 
 @media (min-width: 768px) {
-	section {
+	section:not(.hero-band) {
 		padding-top: var(--section-py-desktop);
 		padding-bottom: var(--section-py-desktop);
 	}
@@ -92,6 +93,15 @@ section {
 .page-header h2 {
 	color: var(--color-charcoal);
 	margin-bottom: 0.75rem;
+}
+
+.page-header h2::after {
+	content: '';
+	display: block;
+	width: 2.5rem;
+	height: 3px;
+	background: var(--color-red);
+	margin: 0.75rem auto 0;
 }
 
 .page-header .page-header-lead {
@@ -137,6 +147,24 @@ section {
 
 .btn-secondary:hover {
 	background-color: #1a1c1e;
+}
+
+.btn-outline {
+	display: inline-block;
+	background-color: transparent;
+	color: var(--color-offwhite);
+	border: 1px solid rgba(239, 231, 221, 0.45);
+	border-radius: 6px;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.9375rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-outline:hover {
+	background-color: rgba(239, 231, 221, 0.08);
+	border-color: rgba(239, 231, 221, 0.7);
 }
 
 .text-accent { color: var(--color-red); }
@@ -187,10 +215,12 @@ section {
 	padding: 0.25rem 0.5rem;
 	text-decoration: none;
 	transition: color 0.15s ease;
+	border-bottom: 2px solid transparent;
 }
 
 .site-header nav ul li a:hover {
 	color: var(--color-offwhite);
+	border-bottom-color: var(--color-red);
 }
 
 .site-header nav {
@@ -254,35 +284,48 @@ main {
 	main { padding-bottom: calc(var(--footer-h-desktop) + 16px); }
 }
 
-/* Hero */
-#home {
-	min-height: 70vh;
+/* Hero — charcoal band for clear visual break */
+.hero-band,
+#home.hero-band {
+	min-height: 72vh;
 	display: flex;
 	align-items: center;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding: 3.5rem 0 4rem;
+	background: var(--color-charcoal);
+	color: var(--color-offwhite);
+	margin-top: 0;
+}
+
+.hero-inner {
+	text-align: center;
 }
 
 #home .hero-tagline {
 	font-size: 0.8125rem;
-	font-weight: 500;
-	letter-spacing: 0.08em;
+	font-weight: 600;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: var(--color-red);
 }
 
+#home .hero-band h1,
+#home h1 {
+	color: var(--color-offwhite);
+	font-size: clamp(2.5rem, 6vw, 4.25rem);
+}
+
 #home .hero-subtitle {
-	margin-top: 1rem;
-	font-size: 1.0625rem;
-	line-height: 1.65;
-	color: var(--color-muted);
-	max-width: 32rem;
+	margin-top: 1.25rem;
+	font-size: 1.125rem;
+	line-height: 1.7;
+	color: rgba(239, 231, 221, 0.78);
+	max-width: 34rem;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #home .hero-actions {
-	margin-top: 2rem;
+	margin-top: 2.25rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -297,29 +340,42 @@ main {
 	}
 
 	.hero-equal {
-		min-width: 160px;
+		min-width: 168px;
 		text-align: center;
 	}
 }
 
 @media (max-width: 639px) {
-	#home { min-height: 55vh; }
-	section { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+	.hero-band, #home.hero-band { min-height: 62vh; padding: 2.5rem 0 3rem; }
+	section:not(.hero-band) { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+}
+
+/* Alternating section surface */
+.section-surface {
+	background: rgba(15, 17, 19, 0.035);
+	border-top: 1px solid var(--color-border);
+	border-bottom: 1px solid var(--color-border);
 }
 
 /* Service cards */
 .service-card {
 	background: var(--color-offwhite);
 	border: 1px solid var(--color-border);
-	border-radius: 6px;
-	padding: 1.25rem;
+	border-left: 4px solid var(--color-red);
+	border-radius: 4px;
+	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
-	transition: border-color 0.15s ease;
+	min-height: 11rem;
+	box-shadow: 0 1px 2px rgba(15, 17, 19, 0.04);
+	transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .service-card:hover {
 	border-color: var(--color-border-hover);
+	border-left-color: var(--color-red);
+	box-shadow: 0 8px 24px rgba(15, 17, 19, 0.06);
+	transform: translateY(-2px);
 }
 
 .service-card h3 {
