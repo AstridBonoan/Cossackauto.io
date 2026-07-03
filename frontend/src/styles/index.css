@@ -582,11 +582,15 @@ section.trust-strip {
 .about-photo {
 	display: block;
 	width: 100%;
-	max-width: 18rem;
+	max-width: 12rem;
 	height: auto;
 	border-radius: var(--radius);
 	border: 1px solid var(--color-border);
 	box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 768px) {
+	.about-photo { max-width: 13.5rem; }
 }
 
 .about-role {
