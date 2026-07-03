@@ -1,0 +1,26 @@
+0000000000000000000000000000000000000000 21de7ebbfe70e0903cfa8c79521b79bb8b0637a0 Astrid Bonoan <astridbonoan@gmail.com> 1768685726 -0500	commit (initial): Deploy workspace snapshot
+21de7ebbfe70e0903cfa8c79521b79bb8b0637a0 21de7ebbfe70e0903cfa8c79521b79bb8b0637a0 Astrid Bonoan <astridbonoan@gmail.com> 1768685726 -0500	Branch: renamed refs/heads/master to refs/heads/main
+21de7ebbfe70e0903cfa8c79521b79bb8b0637a0 340293e75cc2ada967ef5f1f0e94a7ac2c47bf0a Astrid Bonoan <astridbonoan@gmail.com> 1768686243 -0500	commit: Add Vite base and GitHub Actions workflow for Pages deployment
+340293e75cc2ada967ef5f1f0e94a7ac2c47bf0a f9589e82157770ad6cf0dd0c6beb6d76d22b7bdf Astrid Bonoan <astridbonoan@gmail.com> 1768686445 -0500	commit: Trigger Pages deploy
+f9589e82157770ad6cf0dd0c6beb6d76d22b7bdf 51c616a6082f7f325474d81a0276e4ff29e099d6 Astrid Bonoan <astridbonoan@gmail.com> 1768687698 -0500	commit: ci: add pages permissions and disable Jekyll before deploy
+51c616a6082f7f325474d81a0276e4ff29e099d6 de31e028dbb19491dbcfa437fe25d5ce8b30e476 Astrid Bonoan <astridbonoan@gmail.com> 1768687773 -0500	commit: ci: trigger pages deploy (workflow updated)
+de31e028dbb19491dbcfa437fe25d5ce8b30e476 48c765f99930decd7f5c61facda02899ed739073 Astrid Bonoan <astridbonoan@gmail.com> 1768687933 -0500	commit: ci: fix paths in frontend workflow (no extra cd, publish ./dist, create .nojekyll)
+48c765f99930decd7f5c61facda02899ed739073 1b7bd1d1b41af0cfe48c7e5c3fd38f5159a32e27 Astrid Bonoan <astridbonoan@gmail.com> 1768687976 -0500	commit: ci: trigger pages deploy after workflow path fixes
+1b7bd1d1b41af0cfe48c7e5c3fd38f5159a32e27 7ae534e9292b5f108d10f9e50250b3537c403e3f Astrid Bonoan <astridbonoan@gmail.com> 1768688249 -0500	commit: ci: re-run pages deploy (retry)
+7ae534e9292b5f108d10f9e50250b3537c403e3f f703099a957db1e999f5696bf3e57b0f40546745 Astrid Bonoan <astridbonoan@gmail.com> 1768689998 -0500	commit: ci: use DEPLOY_TOKEN for pages deploy
+f703099a957db1e999f5696bf3e57b0f40546745 c073436b63a1196706db6dbfd0fb19fc82356ac7 Astrid Bonoan <astridbonoan@gmail.com> 1768690723 -0500	commit: chore(frontend): add gh-pages deploy scripts and dependency
+c073436b63a1196706db6dbfd0fb19fc82356ac7 1e66fab83c3f41e65b7c3afd2671356d13005361 Astrid Bonoan <astridbonoan@gmail.com> 1768690883 -0500	commit: chore(frontend): create .nojekyll during predeploy
+1e66fab83c3f41e65b7c3afd2671356d13005361 7bd05effb13e22ad5d51f4530c1a9e8a31daf98a Astrid Bonoan <astridbonoan@gmail.com> 1768691623 -0500	commit: chore: update vite base for Cossack-Auto and add deploy docs
+7bd05effb13e22ad5d51f4530c1a9e8a31daf98a ffff83222f8441a501368ad39ea1266b53edec35 Astrid Bonoan <astridbonoan@gmail.com> 1768691675 -0500	commit: chore: update vite base for Cossack-Auto and add deploy docs
+ffff83222f8441a501368ad39ea1266b53edec35 462beb12e6c320d85b751281dcdba52c4309c11d Astrid Bonoan <astridbonoan@gmail.com> 1768692568 -0500	commit: fix: import logo assets and use fallbacks (fix missing images on Pages)
+462beb12e6c320d85b751281dcdba52c4309c11d 64e9feeed4f22314a27c0bac6b30f7ce8fad5ab2 Astrid Bonoan <astridbonoan@gmail.com> 1768692583 -0500	commit: fix: import logo assets and use fallbacks (fix missing images on Pages)
+64e9feeed4f22314a27c0bac6b30f7ce8fad5ab2 2f53cfb11b7d194c762f54ddbbf2962af84463a5 Astrid Bonoan <astridbonoan@gmail.com> 1768694026 -0500	commit: ci: use official Pages actions; remove peaceiris workflow; ignore build artifacts
+2f53cfb11b7d194c762f54ddbbf2962af84463a5 63e5465f077fbf8bdcc14d4927f99f0c3ab93034 Astrid Bonoan <astridbonoan@gmail.com> 1768694414 -0500	commit: ci: trigger Pages deploy
+63e5465f077fbf8bdcc14d4927f99f0c3ab93034 5c561b7c486831eff5d190fe42e80b83ec408ade Astrid Bonoan <astridbonoan@gmail.com> 1768694581 -0500	commit: ci: use upload-artifact@v4 and name artifact 'pages' to fix deprecation
+5c561b7c486831eff5d190fe42e80b83ec408ade 3fd68fea22094b28313c2d861449cbca81325337 Astrid Bonoan <astridbonoan@gmail.com> 1768694871 -0500	commit: ci: rerun Pages deploy (Pages enabled)
+3fd68fea22094b28313c2d861449cbca81325337 7c3e9f9232cafdb4c48b607a41da4929dcb4338d Astrid Bonoan <astridbonoan@gmail.com> 1768695079 -0500	commit: ci: use upload-pages-artifact for Pages deploy
+7c3e9f9232cafdb4c48b607a41da4929dcb4338d 331baee1b3c5114c4371ec4b0daa952421c66b6d Astrid Bonoan <astridbonoan@gmail.com> 1768695219 -0500	commit: ci: trigger workflow after upload-pages-artifact update
+331baee1b3c5114c4371ec4b0daa952421c66b6d 7bcfa4b40b9b99c23cd6c614cb9e43b8e5bb2848 Astrid Bonoan <astridbonoan@gmail.com> 1768695562 -0500	commit: ci: try Pages actions v2 to avoid deprecated upload-artifact v3 dependency
+7bcfa4b40b9b99c23cd6c614cb9e43b8e5bb2848 3606bdbb777230edcb3a12740189a4ff0158a90c Astrid Bonoan <astridbonoan@gmail.com> 1768695772 -0500	commit: ci: fallback deploy - push dist to gh-pages using GITHUB_TOKEN
+3606bdbb777230edcb3a12740189a4ff0158a90c b6ad019e675b16a78efe877d775727159b869f88 Astrid Bonoan <astridbonoan@gmail.com> 1768695832 -0500	commit: ci: grant contents: write so GITHUB_TOKEN can push dist to gh-pages
+b6ad019e675b16a78efe877d775727159b869f88 b31cf380325209dffb8f5286bfb6ef24fae180d2 Astrid Bonoan <astridbonoan@gmail.com> 1768696997 -0500	commit: chore(gh-pages): remove workflows from gh-pages working tree

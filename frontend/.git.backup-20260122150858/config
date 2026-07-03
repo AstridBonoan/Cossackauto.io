@@ -1,0 +1,33 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[branch "main"]
+	gk-last-accessed = 2026-01-18T00:45:47.914Z
+	gk-last-modified = 2026-01-18T00:45:47.914Z
+[remote "origin"]
+	url = https://github.com/AstridBonoan/cossackauto.github.io.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "backup-local-main-20260122020055"]
+	vscode-merge-base = origin/main
+	gk-last-accessed = 2026-01-22T07:01:00.597Z
+	gk-last-modified = 2026-01-22T07:01:00.597Z
+	remote = origin
+	merge = refs/heads/backup-local-main-20260122020055
+[branch "backup-local-main-20260122020143"]
+	remote = origin
+	merge = refs/heads/backup-local-main-20260122020143
+	vscode-merge-base = origin/backup-local-main-20260122020055
+[branch "backup-local-main-20260122020333"]
+	vscode-merge-base = origin/backup-local-main-20260122020143
+	remote = origin
+	merge = refs/heads/backup-local-main-20260122020333
+[branch "backup-local-main-20260122020432"]
+	remote = origin
+	merge = refs/heads/backup-local-main-20260122020432
+	vscode-merge-base = origin/backup-local-main-20260122020333
+	gk-last-accessed = 2026-01-22T07:07:09.312Z
+	gk-last-modified = 2026-01-22T07:07:09.312Z
