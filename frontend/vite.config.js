@@ -7,6 +7,6 @@ export default defineConfig({
   // For a user/org Pages site (username.github.io) built files should be served at '/'
   // For this repository (project site) the base must match the repo path so
   // assets are requested under: https://<user>.github.io/<repo>/
-  base: '/cossackauto.github.io/',
+  base: '/Cossackauto.io/',
   plugins: [react()],
 })
