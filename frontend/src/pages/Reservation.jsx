@@ -265,7 +265,8 @@ export default function Reservation() {
     <section className="reservation-section">
       <div className="max-w-3xl mx-auto px-4">
         <div className="page-header">
-          <h2>Reservation</h2>
+          <p className="page-eyebrow">Schedule service</p>
+          <h2>Book an appointment</h2>
           <p className="page-header-lead">Fill out the form below and we'll get back to you to confirm your appointment.</p>
         </div>
       </div>

@@ -6,7 +6,8 @@ export default function About(){
     <section id="about">
       <div className="max-w-6xl mx-auto px-4">
         <div className="page-header">
-          <h2>About</h2>
+          <p className="page-eyebrow">About us</p>
+          <h2>Meet the shop</h2>
           <p className="page-header-lead">Your trusted neighborhood auto repair shop. Honest work, fair prices, quality service.</p>
         </div>
 
@@ -25,7 +26,7 @@ export default function About(){
             </div>
 
             <div className="mt-8">
-              <Link to="/reservation" className="btn-primary">Book now</Link>
+              <Link to="/reservation" className="btn-primary">Book an appointment</Link>
             </div>
           </div>
         </div>

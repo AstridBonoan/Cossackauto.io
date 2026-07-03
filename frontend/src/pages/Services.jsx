@@ -14,9 +14,10 @@ const services = [
 
 export default function Services(){
   return (
-    <section id="services" className="section-surface">
+    <section id="services">
       <div className="max-w-6xl mx-auto px-4">
         <div className="page-header">
+          <p className="page-eyebrow">What we offer</p>
           <h2>Services</h2>
           <p className="page-header-lead">We provide a full range of maintenance and repair services — from routine oil changes to engine diagnostics and transmission work.</p>
         </div>
@@ -27,7 +28,7 @@ export default function Services(){
               <h3>{s.title}</h3>
               <p>{s.desc}</p>
               <div className="mt-auto">
-                <Link to="/reservation" state={{ prefill: s.title }} className="service-book">Book now →</Link>
+                <Link to="/reservation" state={{ prefill: s.title }} className="service-book">Book appointment</Link>
               </div>
             </article>
           ))}

@@ -5,7 +5,8 @@ export default function Reviews(){
     <section id="reviews">
       <div className="max-w-2xl mx-auto px-4">
         <div className="page-header">
-          <h2>Reviews</h2>
+          <p className="page-eyebrow">Testimonials</p>
+          <h2>Customer reviews</h2>
           <p className="page-header-lead">Honest feedback from the neighborhood.</p>
         </div>
 
